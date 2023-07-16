@@ -76,6 +76,9 @@ class _MyProfileState extends State<MyProfile> {
           Container(
             width: 300,
             child: ElevatedButton.icon(
+              style: ElevatedButton.styleFrom(
+                elevation: 5,
+              ),
               onPressed: () {
                 _launchURL("https://web.facebook.com/yousif.kamal.s");
               },
@@ -89,6 +92,10 @@ class _MyProfileState extends State<MyProfile> {
           Container(
             width: 300,
             child: ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                  elevation: 5,
+                  backgroundColor: Colors.red[300],
+                ),
                 onPressed: () {
                   _launchURL("https://www.instagram.com/yousif__kamal/");
                 },
@@ -101,6 +108,10 @@ class _MyProfileState extends State<MyProfile> {
           Container(
             width: 300,
             child: ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                  elevation: 5,
+                  backgroundColor: Colors.black45,
+                ),
                 onPressed: () {
                   _launchURL("https://github.com/yousif-kamal");
                 },
@@ -113,6 +124,10 @@ class _MyProfileState extends State<MyProfile> {
           Container(
             width: 300,
             child: ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                  elevation: 5,
+                  backgroundColor: Colors.lightBlue,
+                ),
                 onPressed: () {
                   _launchURL(
                       "https://www.linkedin.com/in/yousif-kamal-6b90b8237/");
@@ -122,14 +137,6 @@ class _MyProfileState extends State<MyProfile> {
           ),
           SizedBox(
             height: 15,
-          ),
-          Expanded(
-            flex: 1,
-            child: Container(
-              width: double.infinity,
-              height: 0,
-              color: Colors.amber,
-            ),
           ),
         ],
       ),
